@@ -1,0 +1,38 @@
+// =============================================================
+// Semantic model: sm_procurement (Direct Lake on wh_procurement)
+// Relationships: fact_po_line[supplier_id] -> dim_supplier, [material_id] -> dim_material,
+//                [plant_id] -> dim_plant, [po_date_key] -> dim_date[date_key] (active)
+//                fact_invoice[invoice_date_key] -> dim_date[date_key]
+// Mark dim_date as date table on dim_date[date].
+// =============================================================
+
+Total Spend = SUM ( fact_po_line[spend_eur] )
+
+Spend LY = CALCULATE ( [Total Spend], SAMEPERIODLASTYEAR ( dim_date[date] ) )
+
+Spend YoY % = DIVIDE ( [Total Spend] - [Spend LY], [Spend LY] )
+
+PO Lines = COUNTROWS ( fact_po_line )
+
+On-Time Delivery % =
+DIVIDE (
+    CALCULATE ( COUNTROWS ( fact_po_line ), fact_po_line[is_on_time] = 1 ),
+    CALCULATE ( COUNTROWS ( fact_po_line ), NOT ISBLANK ( fact_po_line[is_on_time] ) )
+)
+
+Avg PO Cycle Days = AVERAGE ( fact_po_line[po_cycle_days] )
+
+Single-Source Spend % =
+DIVIDE (
+    CALCULATE ( [Total Spend], dim_supplier[sourcing_type] = "Single source" ),
+    [Total Spend]
+)
+
+Active Suppliers = DISTINCTCOUNT ( fact_po_line[supplier_id] )
+
+Invoiced Amount = SUM ( fact_invoice[invoice_amount_eur] )
+
+Invoice vs PO Variance =
+VAR _invoiced = [Invoiced Amount]
+VAR _ordered  = CALCULATE ( [Total Spend], NOT ISBLANK ( fact_po_line[receipt_date_key] ) )
+RETURN DIVIDE ( _invoiced - _ordered, _ordered )

@@ -1,0 +1,50 @@
+{
+  "name": "pl_procurement_daily",
+  "properties": {
+    "description": "Daily load: copy raw files, run bronze/silver/gold notebooks, refresh the warehouse star schema. Simplified export; replace the <...> placeholders with your workspace item IDs.",
+    "parameters": {
+      "run_id": { "type": "string", "defaultValue": "@pipeline().RunId" }
+    },
+    "activities": [
+      {
+        "name": "Copy raw files to Lakehouse",
+        "type": "Copy",
+        "typeProperties": {
+          "source": { "type": "DelimitedTextSource", "storeSettings": { "type": "AzureBlobFSReadSettings", "recursive": true, "wildcardFileName": "*.csv" } },
+          "sink":   { "type": "DelimitedTextSink",   "storeSettings": { "type": "LakehouseWriteSettings" } }
+        },
+        "inputs":  [ { "referenceName": "ds_source_landing_zone", "type": "DatasetReference" } ],
+        "outputs": [ { "referenceName": "ds_lakehouse_files_raw", "type": "DatasetReference" } ]
+      },
+      {
+        "name": "Bronze ingest",
+        "type": "TridentNotebook",
+        "dependsOn": [ { "activity": "Copy raw files to Lakehouse", "dependencyConditions": [ "Succeeded" ] } ],
+        "typeProperties": {
+          "notebookId": "<01_bronze_ingest-id>",
+          "workspaceId": "<workspace-id>",
+          "parameters": { "run_id": { "value": "@pipeline().parameters.run_id", "type": "string" } }
+        }
+      },
+      {
+        "name": "Silver transform",
+        "type": "TridentNotebook",
+        "dependsOn": [ { "activity": "Bronze ingest", "dependencyConditions": [ "Succeeded" ] } ],
+        "typeProperties": { "notebookId": "<02_silver_transform-id>", "workspaceId": "<workspace-id>" }
+      },
+      {
+        "name": "Gold model",
+        "type": "TridentNotebook",
+        "dependsOn": [ { "activity": "Silver transform", "dependencyConditions": [ "Succeeded" ] } ],
+        "typeProperties": { "notebookId": "<03_gold_model-id>", "workspaceId": "<workspace-id>" }
+      },
+      {
+        "name": "Load warehouse star schema",
+        "type": "SqlServerStoredProcedure",
+        "dependsOn": [ { "activity": "Gold model", "dependencyConditions": [ "Succeeded" ] } ],
+        "typeProperties": { "storedProcedureName": "dw.usp_load_star_schema" },
+        "linkedService": { "name": "wh_procurement", "properties": { "type": "DataWarehouse", "typeProperties": { "artifactId": "<warehouse-id>", "workspaceId": "<workspace-id>" } } }
+      }
+    ]
+  }
+}

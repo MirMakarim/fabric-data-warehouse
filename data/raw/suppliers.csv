@@ -1,0 +1,121 @@
+supplier_id,supplier_name,country,category,payment_terms_days,is_single_source
+S1000,Alpenlogistik AG,CZ,Logistics,45,True
+S1001,Alpenmetal Sp. z o.o.,CZ,Packaging,60,False
+S1002,Alpenpack B.V.,US,Raw materials,30,True
+S1003,Alpenpack KG,DE,Plastics,30,False
+S1004,  Alpenplast GmbH ,CN,Electronics,45,False
+S1005,Alpentech Sp. z o.o.,CN,Plastics,45,False
+S1006,Alpenwerk Ltd,CZ,Services,30,False
+S1007,Alpenwerk S.A.,PL,Plastics,45,False
+S1008,Apexchem Ltd,DE,Electronics,45,True
+S1009,  Apexlogistik Sp. z o.o. ,IN,Packaging,30,True
+S1010,Apexpack AG,IN,Services,45,True
+S1011,Apexpack Sp. z o.o.,DE,Services,60,False
+S1012,Apexplast Ltd,DE,Raw materials,30,False
+S1013,Apextronic KG,DE,Plastics,90,False
+S1014,Apexwerk Ltd,DE,Packaging,90,False
+S1015,Atlaslogistik Ltd,MX,Raw materials,45,True
+S1016,Atlasmetal GmbH,US,Raw materials,30,False
+S1017,Atlasparts KG,DE,Raw materials,45,True
+S1018,Atlasplast Ltd,CN,Services,60,False
+S1019,Atlassystems KG,DE,Logistics,60,False
+S1020,Atlastronic KG,CZ,Services,60,False
+S1021,Atlastronic Sp. z o.o.,NL,Logistics,45,False
+S1022,Atlaswerk s.r.o.,CN,Services,60,True
+S1023,Balticchem S.A.,US,Electronics,30,False
+S1024,Balticmetal B.V.,DE,Services,60,True
+S1025,Balticpack KG,DE,Electronics,30,False
+S1026,Balticparts S.A.,PL,Plastics,60,False
+S1027,Balticplast AG,PL,Packaging,60,True
+S1028,Balticplast Ltd,IN,Plastics,30,True
+S1029,Balticplast Sp. z o.o.,MX,Electronics,60,True
+S1030,Balticwerk Ltd,PL,Raw materials,30,False
+S1031,Cobaltpack Sp. z o.o.,IN,Logistics,60,False
+S1032,Cobaltplast AG,FR,Raw materials,30,False
+S1033,Cobaltsystems AG,IT,Raw materials,90,False
+S1034,Cobalttech KG,FR,Services,30,False
+S1035,Cobalttronic KG,DE,Electronics,90,True
+S1036,Cobalttronic S.A.,IN,Services,60,False
+S1037,  Deltalogistik Ltd ,DE,Services,45,False
+S1038,Deltametal Sp. z o.o.,DE,Packaging,60,False
+S1039,Deltasystems GmbH,DE,Electronics,60,False
+S1040,Falconmetal B.V.,PL,Electronics,90,False
+S1041,Falconpack AG,DE,Raw materials,30,False
+S1042,Falconparts S.A.,DE,Packaging,45,True
+S1043,Falconsystems s.r.o.,CN,Electronics,30,False
+S1044,  Falcontech KG ,IN,Plastics,60,False
+S1045,Falcontech Ltd,DE,Electronics,30,False
+S1046,Granitelogistik GmbH,PL,Packaging,45,True
+S1047,Granitepack B.V.,IT,Electronics,45,True
+S1048,Granitepack S.A.,IN,Logistics,45,False
+S1049,Graniteparts KG,CN,Electronics,45,False
+S1050,Graniteplast B.V.,MX,Raw materials,60,False
+S1051,Granitewerk GmbH,IT,Raw materials,60,False
+S1052,  Helixtronic Ltd ,FR,Logistics,45,False
+S1053,Helixtronic Sp. z o.o.,DE,Electronics,45,False
+S1054,Helixwerk KG,US,Plastics,90,False
+S1055,Helixwerk Ltd,MX,Packaging,30,True
+S1056,Kestrelparts B.V.,DE,Packaging,30,False
+S1057,Kestrelsystems GmbH,CN,Logistics,30,False
+S1058,Kestrelsystems s.r.o.,DE,Logistics,60,True
+S1059,Lumenpack GmbH,CN,Plastics,45,False
+S1060,Lumenpack KG,MX,Logistics,60,False
+S1061,Lumenparts Sp. z o.o.,DE,Raw materials,60,True
+S1062,Lumenplast s.r.o.,FR,Services,30,False
+S1063,Lumentronic KG,DE,Packaging,60,False
+S1064,Meridianmetal Ltd,IT,Logistics,60,False
+S1065,Meridianplast GmbH,IN,Services,30,False
+S1066,Meridianwerk Ltd,DE,Logistics,45,False
+S1067,Nordmetal Sp. z o.o.,CZ,Services,30,False
+S1068,Nordparts S.A.,IN,Packaging,30,False
+S1069,Nordparts Sp. z o.o.,PL,Electronics,30,False
+S1070,Novaparts S.A.,DE,Plastics,90,False
+S1071,Novaparts Sp. z o.o.,FR,Raw materials,45,False
+S1072,Novaplast GmbH,IT,Services,45,False
+S1073,Novatronic Ltd,NL,Raw materials,60,False
+S1074,Novawerk s.r.o.,PL,Raw materials,45,False
+S1075,Orionchem s.r.o.,IN,Raw materials,90,False
+S1076,Orionlogistik GmbH,IT,Packaging,60,False
+S1077,Orionlogistik Ltd,PL,Packaging,45,False
+S1078,Orionlogistik S.A.,IN,Services,45,False
+S1079,Orionpack s.r.o.,IN,Plastics,90,False
+S1080,Orionsystems S.A.,FR,Raw materials,60,False
+S1081,Oriontech GmbH,DE,Electronics,90,False
+S1082,Oriontronic B.V.,NL,Electronics,30,False
+S1083,Orionwerk KG,IT,Plastics,60,True
+S1084,Pioneerchem AG,DE,Services,60,True
+S1085,Pioneerlogistik s.r.o.,NL,Packaging,30,False
+S1086,Pioneermetal AG,US,Services,45,True
+S1087,Pioneermetal KG,DE,Electronics,60,False
+S1088,Pioneerpack Sp. z o.o.,CN,Electronics,30,False
+S1089,  Pioneerplast AG ,DE,Services,45,True
+S1090,Pioneersystems GmbH,CN,Electronics,60,False
+S1091,Pioneertronic B.V.,FR,Electronics,30,False
+S1092,Pioneertronic Sp. z o.o.,DE,Plastics,45,True
+S1093,Pioneertronic s.r.o.,IN,Services,45,False
+S1094,Polarlogistik B.V.,DE,Logistics,30,False
+S1095,  Polarsystems GmbH ,NL,Electronics,90,False
+S1096,Rheinlogistik B.V.,DE,Services,60,True
+S1097,  Rheinlogistik GmbH ,IN,Services,30,False
+S1098,Rheinlogistik Ltd,CN,Logistics,90,True
+S1099,Rheinmetal AG,MX,Services,60,False
+S1100,Rheinmetal GmbH,FR,Raw materials,30,False
+S1101,Rheinpack GmbH,FR,Services,60,False
+S1102,Rheinpack S.A.,NL,Raw materials,30,False
+S1103,Rheinsystems AG,MX,Logistics,90,False
+S1104,Summitmetal GmbH,US,Packaging,60,False
+S1105,Summitmetal KG,DE,Logistics,60,False
+S1106,Summitparts Ltd,NL,Packaging,30,False
+S1107,Summitplast AG,DE,Packaging,60,False
+S1108,Summitplast GmbH,PL,Packaging,30,True
+S1109,Summitsystems S.A.,MX,Logistics,30,True
+S1110,Summittech S.A.,PL,Logistics,30,False
+S1111,Summitwerk AG,MX,Electronics,60,True
+S1112,Summitwerk GmbH,FR,Logistics,30,True
+S1113,Summitwerk Ltd,DE,Packaging,90,False
+S1114,Summitwerk s.r.o.,CZ,Raw materials,60,False
+S1115,Vectorchem B.V.,IT,Packaging,30,False
+S1116,Vectorchem s.r.o.,MX,Services,30,False
+S1117,Vectortech AG,NL,Services,30,False
+S1118,Vectortronic Ltd,IN,Services,60,True
+S1119,Vectorwerk KG,US,Plastics,60,False

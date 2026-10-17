@@ -1,0 +1,9 @@
+plant_id,plant_name,country,region
+P100,Plant Lippstadt,DE,EMEA
+P110,Plant Hamm,DE,EMEA
+P200,Plant Brno,CZ,EMEA
+P210,Plant Craiova,RO,EMEA
+P300,Plant Querétaro,MX,Americas
+P310,Plant Detroit,US,Americas
+P400,Plant Shanghai,CN,Asia Pacific
+P410,Plant Pune,IN,Asia Pacific

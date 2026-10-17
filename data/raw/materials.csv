@@ -1,0 +1,91 @@
+material_id,material_name,category,unit
+M20000,Sensor module A,Electronics,EA
+M20001,Sensor module B,Electronics,EA
+M20002,Sensor module C,Electronics,EA
+M20003,LED driver A,Electronics,EA
+M20004,LED driver B,Electronics,EA
+M20005,LED driver C,Electronics,EA
+M20006,Microcontroller A,Electronics,EA
+M20007,Microcontroller B,Electronics,EA
+M20008,Microcontroller C,Electronics,EA
+M20009,Wiring harness A,Electronics,EA
+M20010,Wiring harness B,Electronics,EA
+M20011,Wiring harness C,Electronics,EA
+M20012,PCB assembly A,Electronics,EA
+M20013,PCB assembly B,Electronics,EA
+M20014,PCB assembly C,Electronics,EA
+M20015,Aluminium sheet A,Raw materials,KG
+M20016,Aluminium sheet B,Raw materials,KG
+M20017,Aluminium sheet C,Raw materials,KG
+M20018,Steel coil A,Raw materials,KG
+M20019,Steel coil B,Raw materials,KG
+M20020,Steel coil C,Raw materials,KG
+M20021,Copper wire A,Raw materials,KG
+M20022,Copper wire B,Raw materials,KG
+M20023,Copper wire C,Raw materials,KG
+M20024,Polycarbonate granulate A,Raw materials,KG
+M20025,Polycarbonate granulate B,Raw materials,KG
+M20026,Polycarbonate granulate C,Raw materials,KG
+M20027,Glass lens blank A,Raw materials,KG
+M20028,Glass lens blank B,Raw materials,KG
+M20029,Glass lens blank C,Raw materials,KG
+M20030,Housing cover A,Plastics,EA
+M20031,Housing cover B,Plastics,EA
+M20032,Housing cover C,Plastics,EA
+M20033,Clip set A,Plastics,EA
+M20034,Clip set B,Plastics,EA
+M20035,Clip set C,Plastics,EA
+M20036,Gasket A,Plastics,EA
+M20037,Gasket B,Plastics,EA
+M20038,Gasket C,Plastics,EA
+M20039,Lens frame A,Plastics,EA
+M20040,Lens frame B,Plastics,EA
+M20041,Lens frame C,Plastics,EA
+M20042,Connector shell A,Plastics,EA
+M20043,Connector shell B,Plastics,EA
+M20044,Connector shell C,Plastics,EA
+M20045,Carton box A,Packaging,EA
+M20046,Carton box B,Packaging,EA
+M20047,Carton box C,Packaging,EA
+M20048,Foam insert A,Packaging,EA
+M20049,Foam insert B,Packaging,EA
+M20050,Foam insert C,Packaging,EA
+M20051,Pallet A,Packaging,EA
+M20052,Pallet B,Packaging,EA
+M20053,Pallet C,Packaging,EA
+M20054,ESD bag A,Packaging,EA
+M20055,ESD bag B,Packaging,EA
+M20056,ESD bag C,Packaging,EA
+M20057,Label roll A,Packaging,EA
+M20058,Label roll B,Packaging,EA
+M20059,Label roll C,Packaging,EA
+M20060,Road freight A,Logistics,EA
+M20061,Road freight B,Logistics,EA
+M20062,Road freight C,Logistics,EA
+M20063,Sea freight A,Logistics,EA
+M20064,Sea freight B,Logistics,EA
+M20065,Sea freight C,Logistics,EA
+M20066,Express parcel A,Logistics,EA
+M20067,Express parcel B,Logistics,EA
+M20068,Express parcel C,Logistics,EA
+M20069,Warehousing fee A,Logistics,EA
+M20070,Warehousing fee B,Logistics,EA
+M20071,Warehousing fee C,Logistics,EA
+M20072,Customs handling A,Logistics,EA
+M20073,Customs handling B,Logistics,EA
+M20074,Customs handling C,Logistics,EA
+M20075,Tool maintenance A,Services,EA
+M20076,Tool maintenance B,Services,EA
+M20077,Tool maintenance C,Services,EA
+M20078,Calibration A,Services,EA
+M20079,Calibration B,Services,EA
+M20080,Calibration C,Services,EA
+M20081,IT support A,Services,EA
+M20082,IT support B,Services,EA
+M20083,IT support C,Services,EA
+M20084,Cleaning service A,Services,EA
+M20085,Cleaning service B,Services,EA
+M20086,Cleaning service C,Services,EA
+M20087,Training A,Services,EA
+M20088,Training B,Services,EA
+M20089,Training C,Services,EA
